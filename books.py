@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-import argparse
 import requests
 from bs4 import BeautifulSoup
 from word2number import w2n
@@ -33,7 +32,7 @@ def scrape_book(url):
         review_rating = w2n.word_to_num(" ".join(ps[2]['class'][:10]))
         a = soup.find_all('a')
         category = a[3].text
-        image_url = body.img['src'][5:]
+        image_url = 'http://books.toscrape.com' + body.img['src'][5:]
         return {
             'title': title,
             'upc': upc,
@@ -47,13 +46,3 @@ def scrape_book(url):
         }
     else:
         print("Error", r.status_code)
-
-
-if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Scrape a Book')
-    parser.add_argument('--url',
-                        type=str,
-                        metavar='',
-                        help='URL of a book from http://books.toscrape.com/')
-    args = parser.parse_args()
-    print(scrape_book(args.url))
