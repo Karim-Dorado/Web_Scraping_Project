@@ -24,7 +24,3 @@ def scrape_cat_list():
         for a in a_list[1:]:
             cat_url_list.append('http://books.toscrape.com/' + a['href'])
         return cat_url_list
-
-
-if __name__ == '__main__':
-    print(scrape_cat_list())
