@@ -12,6 +12,7 @@ Python 3.9 is required to run this utility. Make sure to download and install th
 `cd BooksOnline`
 
 **Step 3:** Clone this repository.
+`git clone https://github.com/Karim-Dorado/Web_Scraping_Project.git`
 
 **Step 4:** Create and activate your virtual environment 
 `python -m venv env`
@@ -34,6 +35,7 @@ Python 3.9 is required to run this utility. Make sure to download and install th
 `cd C:\BooksOnline` 
 
 **Step 3:** Clone this repository.
+`git clone https://github.com/Karim-Dorado/Web_Scraping_Project.git`
 
 **Step 4:** Create a virtual environment.
 `python -m venv env`
