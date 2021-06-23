@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-import argparse
 import requests
 from bs4 import BeautifulSoup
 
@@ -43,13 +42,3 @@ def scrape_cat(url):
                         "http://books.toscrape.com/catalogue" +
                         h3.a['href'][8:])
     return url_list
-
-
-if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Scrape a Category')
-    parser.add_argument('--url',
-                        type=str,
-                        metavar='',
-                        help='URL of a category')
-    args = parser.parse_args()
-    print(scrape_cat(args.url))
