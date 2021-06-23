@@ -11,9 +11,9 @@ Python 3.9 is required to run this utility. Make sure to download and install th
 **Step 2:** Move from your current working directory to the one you have just created. 
 `cd BooksOnline`
 
-**Step 3:** Clone this repository.
- ***1.*** `git remote add WSP https://github.com/Karim-Dorado/Web_Scraping_Project.git`
- ***2.*** `git branch -M main`
+**Step 3:** Clone this repository.                                                                                                                                               
+ ***1.*** `git remote add WSP https://github.com/Karim-Dorado/Web_Scraping_Project.git`                                                                                         
+ ***2.*** `git branch -M main`                                                                                                                                                   
  ***3.*** `git pull WSP main`
 
 **Step 4:** Create and activate your virtual environment 
@@ -36,9 +36,9 @@ Python 3.9 is required to run this utility. Make sure to download and install th
 **Step 2:** Move from your current working directory to the one you have just created. 
 `cd C:\BooksOnline` 
 
-**Step 3:** Clone this repository.
- ***1.*** `git remote add WSP https://github.com/Karim-Dorado/Web_Scraping_Project.git`
- ***2.*** `git branch -M main`
+**Step 3:** Clone this repository.                                                                                                                                               
+ ***1.*** `git remote add WSP https://github.com/Karim-Dorado/Web_Scraping_Project.git`                                                                                         
+ ***2.*** `git branch -M main`                                                                                                                                                   
  ***3.*** `git pull WSP main`
  
 **Step 4:** Create a virtual environment.
