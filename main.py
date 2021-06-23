@@ -52,7 +52,7 @@ def main():
                             "\nPlease rename/delete it if you want "
                             "this utility runs correctly.")
         for b in books_scraped[books_category]:
-            r = requests.get('http://books.toscrape.com' + b['image_url'])
+            r = requests.get(b['image_url'])
             img_name = b['title'].translate({ord(':'): None,
                                              ord('/'): None,
                                              ord('*'): None,
@@ -62,10 +62,6 @@ def main():
                                              ord('>'): None,
                                              ord('"'): None,
                                              ord('\\'): None}) + ".jpg"
-            b['image_url'] = os.path.abspath(img_name)
-            """
-            b['image_url'] = os.path.relpath(img_name, directory)
-            """
             if r.ok:
                 with open(img_name, 'wb') as f:
                     f.write(r.content)
